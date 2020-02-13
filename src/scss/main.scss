@@ -1,0 +1,167 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+body,html {
+	height: 98%;
+}
+.content {
+	flex-grow: 1;
+}
+.clearFloat {
+	clear: both;
+}
+.menu {
+	width: 390px;
+	padding: 20px;
+	margin: auto;
+	input {
+		margin-left: 5px;
+	}
+	select {
+		margin-left: 5px;
+	}
+}
+.popupWindow {
+	height: 350px;
+	width: 290px;
+	z-index: 100;
+	padding: 23px 0px 0px 25px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	background-color: white;
+	display: none;
+	top: 100px;
+	h3 {
+		font-size: 16px;
+		padding: 1px 0 2px 0;
+		margin: 1px 0 2px 0;
+	}
+}
+#textPopup {
+	height: 50px;
+	width: 260px;
+}
+#TextDiscription {
+	height: 100px;
+	width: 260px;
+}
+#popupPriority {
+	width: 260px;
+	height: 30px;
+}
+.popupBtn {
+	margin-top: 20px;
+	height: 30px;
+	width: 128px;
+	border-radius: 10px;
+}
+.fonts {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background: grey;
+	background: rgba(172,184,173,0.6);
+	display: none;
+}
+.popupChange {
+	height: 350px;
+	width: 290px;
+	z-index: 100;
+	padding: 23px 0px 0px 25px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	background-color: white;
+	display: none;
+	top: 100px;
+	h3 {
+		font-size: 16px;
+		padding: 1px 0 2px 0;
+		margin: 1px 0 2px 0;
+	}
+}
+#textPopupChange {
+	height: 50px;
+	width: 260px;
+}
+#TextDiscriptionChange {
+	height: 100px;
+	width: 260px;
+}
+#popupPriorityChange {
+	width: 260px;
+	height: 30px;
+}
+.popupBtnChange {
+	margin-top: 20px;
+	height: 30px;
+	width: 128px;
+	border-radius: 10px;
+}
+.fontsChange {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background: grey;
+	background: rgba(172,184,173,0.6);
+	display: none;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 970px;
+	margin: auto;
+}
+.openList {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	float: left;
+	border: 1px solid black;
+	display: block;
+	h3 {
+		padding: 5px;
+		height: 70px;
+		text-align: center;
+	}
+	p {
+		padding: 5px 5px 5px 25px;
+		height: 100px;
+	}
+}
+.secondDivClass {
+	margin-left: 5px;
+	border: 1px dashed black;
+	height: 20px;
+	width: 50px;
+	text-align: center;
+	padding: 0 15px;
+	margin: 0 25px;
+	display: inline-block;
+}
+.selectBtnBarStyle {
+	margin: 0 15px;
+	padding: 1.5px 13px;
+	float: right;
+}
+.doneList {
+	background-color: #b6b6b6;
+	opacity: 0.6;
+}
+.footer {
+	width: 100%;
+	height: 50px;
+	h3 {
+		padding-left: 30px;
+	}
+}
