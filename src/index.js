@@ -8,7 +8,7 @@ import {popupBtnChange} from "./js/popupBtnChange";
 
 const createBtn = document.getElementById('createBtn'),
     textPopup = document.getElementById('textPopup'),
-    TextDiscription = document.getElementById('TextDiscription'),
+    TextDescription = document.getElementById('TextDescription'),
     popupPriority = document.getElementById('popupPriority'),
     createPopupBtn = document.getElementById('createPopupBtn'),
     createPopupBtnChange = document.getElementById('createPopupBtnChange'),
@@ -19,7 +19,6 @@ let state = {
     list: []
 };
 let idElement = 0;
-
 // open popUP
 export const openPopUpWindow = () => {
     document.getElementById('popupWindow').style.display = 'block';
@@ -34,7 +33,6 @@ export const closePopUpWindow = () => {
 export const closePopUpChangeWindow = () => {
     document.getElementById('popupChange').style.display = 'none';
     document.getElementById('fontsChange').style.display = 'none';
-
     for (let i = 0; i < state.list.length; i++) {
         if (state.list[i][5] === true) state.list[i][5] = false;
         let a = document.getElementsByClassName(`DivId${state.list[i][0]}`);
@@ -53,13 +51,13 @@ document.getElementById('cancelPopupBtn').addEventListener('click', closePopUpWi
 document.getElementById('cancelPopupBtnChange').addEventListener('click', closePopUpChangeWindow);
 //add to list
 createPopupBtn.addEventListener('click', () => {
-    addToList(state, textPopup.value, TextDiscription.value, popupPriority.value, idElement);
-    write(state, textPopup.value, TextDiscription.value, popupPriority.value, idElement);
+    addToList(state, textPopup.value, TextDescription.value, popupPriority.value, idElement);
+    write(state, textPopup.value, TextDescription.value, popupPriority.value, idElement);
     closePopUpWindow();
-    textPopup.value = TextDiscription.value = '';
+    textPopup.value = TextDescription.value = '';
     popupPriority.value = 'hight';
     idElement += 1;
-    console.log(state);
+
 });
 // when change container select
 container.addEventListener('change', event => {
@@ -77,5 +75,5 @@ menu.addEventListener('change', event => {
 });
 //when click on PopupBtnChange
 createPopupBtnChange.addEventListener('click', () => {
-    popupBtnChange(state,);
+    popupBtnChange(state);
 });

@@ -1,8 +1,8 @@
 const processed = document.getElementById('processed');
 const priority = document.getElementById('priority');
+const searchBar = document.getElementById('searchBar');
 
 const SelectSort = (state, e) => {
-    debugger;
     if (e === 'all' && processed.value !== 'all') e = processed.value;
     if (e === 'all' && priority.value !== 'all') e = priority.value;
     let searchBarValue = searchBar.value;

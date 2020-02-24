@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/app.css">
-    <title>webpack</title>
+    <title>ToDo_List</title>
 </head>
-
 <body>
     <div class="header">
-        <h2>TODOlist</h2>
+        <h2>ToDo-List</h2>
         <hr>
     </div>
+<!--    nuv menu-->
     <div class="content">
         <div class="menu">
             <input type="search" name="" id="searchBar">
-
             <select name="" id="processed" >
                 <option value="all">all</option>
                 <option value="open">open</option>
                 <option value="done">done</option>
             </select>
-
             <select name="" id="priority" >
                 <option value="all">all</option>
-                <option value="hight">hight</option>
+                <option value="hight">high</option>
                 <option value="normal">normal</option>
                 <option value="low">low</option>
             </select>
-
             <input type="button" value="Create" id="createBtn">
         </div>
-
+<!--popUp window-->
         <div class="fonts" id="fonts">
             <div class="popupWindow" id="popupWindow">
                 <h3>Title</h3>
                 <input type="text" name="title" id="textPopup">
                 <h3>Description</h3>
-                <input type="text" name="Description" id="TextDiscription">
+                <input type="text" name="Description" id="TextDescription">
                 <h3>priority</h3>
                 <select name="" id="popupPriority">
-                    <option value="hight">hight</option>
+                    <option value="hight">high</option>
                     <option value="normal">normal</option>
                     <option value="low">low</option>
                 </select>
@@ -50,16 +46,16 @@
                 <input type="button" value="Enter" class="popupBtn" id="createPopupBtn">
             </div>
         </div>
-
+<!--Change popUp window-->
         <div class="fontsChange" id="fontsChange">
             <div class="popupChange" id="popupChange">
                 <h3>Title</h3>
                 <input type="text" name="title" id="textPopupChange">
                 <h3>Description</h3>
-                <input type="text" name="Discription" id="TextDiscriptionChange">
+                <input type="text" name="Description" id="TextDescriptionChange">
                 <h3>priority</h3>
                 <select name="" id="popupPriorityChange">
-                    <option value="hight">hight</option>
+                    <option value="hight">high</option>
                     <option value="normal">normal</option>
                     <option value="low">low</option>
                 </select>
@@ -67,18 +63,14 @@
                 <input type="button" value="Edit" class="popupBtn" id="createPopupBtnChange">
             </div>
         </div>
-
         <div class="container" id="container">
-
         </div>
     </div>
-
-
+<!--footer-->
     <div class="footer">
         <hr>
         <h3>Vlasenko Ivan</h3>
     </div>
     <script src="./dist/app.js"></script>
 </body>
-
 </html>

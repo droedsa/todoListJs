@@ -1,8 +1,7 @@
-import {closePopUpChangeWindow, openPopUpChangeWindow} from "../index";
-import {write} from "./writeNewEl";
+import {openPopUpChangeWindow} from "../index";
 
 const textPopupChange = document.getElementById('textPopupChange');
-const TextDescriptionChange = document.getElementById('TextDiscriptionChange');
+const TextDescriptionChange = document.getElementById('TextDescriptionChange');
 const popupPriorityChange = document.getElementById('popupPriorityChange');
 const container = document.getElementById('container');
 
